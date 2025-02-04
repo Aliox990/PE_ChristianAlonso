@@ -1,4 +1,4 @@
 //archivos que no se suben a git
-.idea
-cmake-build-debug
+.idea/
+cmake-build-debug/
 CMakeLists.txt
