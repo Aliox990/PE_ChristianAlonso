@@ -1,3 +1,0 @@
-C:/Programas/Programacion Estructurada CUALTOS/cmake-build-debug/CMakeFiles/Programacion_Estructurada_CUALTOS.dir
-C:/Programas/Programacion Estructurada CUALTOS/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Programas/Programacion Estructurada CUALTOS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
