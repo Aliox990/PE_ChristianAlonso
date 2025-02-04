@@ -1,4 +1,4 @@
-//archivos que no se suben a git
+#archivos que no se subiran al repositorio
 .idea/
 cmake-build-debug/
 CMakeLists.txt
