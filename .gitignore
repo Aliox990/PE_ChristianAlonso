@@ -5,3 +5,4 @@ CMakeLists.txt
 .vscode/
 archivo_inicial.txt
 *.exe
+*.psc
