@@ -5,7 +5,7 @@
 #include<iostream>
 using namespace std;
 //declaracion de variables
-int num, i, sumaMult3, contMult3, contMult5, sumaMult5; //el tamaño del arreglo es el maximo de multiplos de 3 y 5 hasta 1000
+int num, i, sumaMult3, contMult3, contMult5, sumaMult5;
 bool esMultiplo;
 
 int main() //inicio del main
