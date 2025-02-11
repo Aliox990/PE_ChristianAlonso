@@ -34,14 +34,14 @@ int main() //inicio del main
         //verificar los multipos de 3:
         if (i % 3 == 0)
         {
-            cout << i; //imprime el numero que se esta comprobando actualmente
+            cout << "\r" << i; //imprime el numero que se esta comprobando actualmente
             sumaMult3 += i; // agrega el valor actual a la suma total de los multiplos de 3
             contMult3++; // aumenta en uno el numero de multiplos de 3
             esMultiplo = true;
         }
         else
         {
-            cout << " "; //para mantener la alineacion
+            cout << "\r "; //para mantener la alineacion
         }
 
         cout << "\t"; //para separar columnas
