@@ -6,3 +6,4 @@ CMakeLists.txt
 archivo_inicial.txt
 *.exe
 *.psc
+Extras/
