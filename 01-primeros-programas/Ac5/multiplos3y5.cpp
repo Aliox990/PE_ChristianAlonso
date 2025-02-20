@@ -64,10 +64,10 @@ int main() //inicio del main
 
     //mostrar resultados finales de la suma y el total de multiplos
     cout << "Total de multiplos de 3:" << contMult3 << endl;
-    cout << "Suma de los multiplos de 3" << sumaMult3 << endl;
+    cout << "Suma de los multiplos de 3:" << sumaMult3 << endl;
 
     cout << "Total de multiplos de 5:" << contMult5 << endl;
-    cout << "Suma de los multiplos de 5" << sumaMult5 << endl;
+    cout << "Suma de los multiplos de 5:" << sumaMult5 << endl;
 
     return 0;
 }// final del main
