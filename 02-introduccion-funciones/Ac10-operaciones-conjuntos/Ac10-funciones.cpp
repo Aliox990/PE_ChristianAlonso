@@ -25,7 +25,7 @@ int obtenerNumero() {
             num = stoi(entrada, &idx);
             if (idx == entrada.size()) break; // Se asegura de que toda la entrada sea un número
         } catch (...) {}
-        cout << "ERROR: Debes ingresar un número entero válido.\nIngresa otro número: ";
+        cout << "ERROR: Debes ingresar un numero entero válido.\nIngresa otro numero: ";
     }
     return num;
 }
@@ -38,7 +38,7 @@ int obtenerNumero() {
  * No recibe parámetros ni retorna valores.
  */
 void mostrarMenu() {
-    cout << "\nMenú de Operaciones con Conjuntos" << endl;
+    cout << "\nMenu de Operaciones con Conjuntos" << endl;
     cout << "1. Agregar elemento a A" << endl;
     cout << "2. Agregar elemento a B" << endl;
     cout << "3. Mostrar conjunto A" << endl;
@@ -49,12 +49,12 @@ void mostrarMenu() {
     cout << "8. Borrar elemento de B" << endl;
     cout << "9. Vaciar conjunto A" << endl;
     cout << "10. Vaciar conjunto B" << endl;
-    cout << "11. Realizar Unión" << endl;
+    cout << "11. Realizar Union" << endl;
     cout << "12. Realizar Intersección" << endl;
     cout << "13. Realizar Diferencia" << endl;
     cout << "14. Realizar Complemento" << endl;
     cout << "15. Salir" << endl;
-    cout << "Seleccione una opción: ";
+    cout << "Seleccione una opcion: ";
 }
 
 /*
@@ -99,7 +99,7 @@ void actualizarUniverso(vector<string>& universo, const vector<string>& A, const
  */
 void mostrarConjunto(const vector<string>& conjunto, const string& nombre) {
     if (conjunto.empty()) {
-        cout << "El conjunto " << nombre << " está vacío." << endl;
+        cout << "El conjunto " << nombre << " esta vacio." << endl;
         return;
     }
     cout << "Conjunto " << nombre << ": { ";
@@ -156,7 +156,7 @@ void agregarElemento(vector<string>& conjunto, vector<string>& universo, const v
  */
 void editarElemento(vector<string>& conjunto, vector<string>& universo, const string& nombre) {
     if (conjunto.empty()) {
-        cout << "El conjunto " << nombre << " está vacío." << endl;
+        cout << "El conjunto " << nombre << " esta vacio." << endl;
         return;
     }
     mostrarConjunto(conjunto, nombre);
@@ -200,7 +200,7 @@ void editarElemento(vector<string>& conjunto, vector<string>& universo, const st
  */
 void borrarElemento(vector<string>& conjunto, const string& nombre) {
     if (conjunto.empty()) {
-        cout << "El conjunto " << nombre << " está vacío." << endl;
+        cout << "El conjunto " << nombre << " esta vacio." << endl;
         return;
     }
     mostrarConjunto(conjunto, nombre);
@@ -230,7 +230,7 @@ void borrarElemento(vector<string>& conjunto, const string& nombre) {
  */
 void vaciarConjunto(vector<string>& conjunto, const string& nombre) {
     if (conjunto.empty()) {
-        cout << "El conjunto " << nombre << " ya está vacío." << endl;
+        cout << "El conjunto " << nombre << " ya esta vacio." << endl;
         return;
     }
     conjunto.clear();
@@ -256,7 +256,7 @@ vector<string> unionConjuntos(const vector<string>& A, const vector<string>& B) 
             resultado.push_back(elem);
         }
     }
-    cout << "La unión de los conjuntos es: ";
+    cout << "La union de los conjuntos es: ";
     mostrarConjunto(resultado, "A ∪ B");
     return resultado;
 }
@@ -280,7 +280,7 @@ vector<string> interseccionConjuntos(const vector<string>& A, const vector<strin
             resultado.push_back(elem);
         }
     }
-    cout << "La intersección de los conjuntos es: ";
+    cout << "La interseccion de los conjuntos es: ";
     mostrarConjunto(resultado, "A ∩ B");
     return resultado;
 }
@@ -301,7 +301,7 @@ vector<string> diferenciaConjuntos(const vector<string>& A, const vector<string>
     cout << "Elige el orden de la diferencia:" << endl;
     cout << "1. A - B" << endl;
     cout << "2. B - A" << endl;
-    cout << "Selecciona una opción: ";
+    cout << "Selecciona una opcion: ";
     int opcion = obtenerNumero();
 
     vector<string> resultado;
@@ -322,7 +322,7 @@ vector<string> diferenciaConjuntos(const vector<string>& A, const vector<string>
         cout << "La diferencia B - A es: ";
         mostrarConjunto(resultado, "B - A");
     } else {
-        cout << "Opción no válida." << endl;
+        cout << "Opcion no valida." << endl;
     }
     return resultado;
 }

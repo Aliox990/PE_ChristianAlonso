@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <limits>
+#include <cstdlib>
 using namespace std;
 
 // Esta función muestra el menú de opciones
@@ -29,7 +29,7 @@ void mostrarArreglo(const vector<int>& arreglo)
     cout << "Lista de valores:" << endl;
     for (int i = 0; i < arreglo.size(); i++)
     {
-        cout << "Posicion " << i << ": " << arreglo[i] << endl;
+        cout << "Posicion " << i+1 << ": " << arreglo[i] << endl;
     }
 }
 
@@ -102,8 +102,9 @@ void cambiarValor(vector<int>& arreglo)
 
     int posicion;
     mostrarArreglo(arreglo);
-    cout << "Ingresa la posicion a cambiar (0 a " << arreglo.size() - 1 << "): ";
+    cout << "Ingresa la posicion a cambiar (1 a " << arreglo.size() << "): ";
     cin >> posicion;
+    posicion--;
 
     if (posicion >= 0 && posicion < arreglo.size())
     {
@@ -129,8 +130,9 @@ void borrarValor(vector<int>& arreglo)
 
     int posicion;
     mostrarArreglo(arreglo);
-    cout << "Ingresa la posicion a borrar (0 a " << arreglo.size() - 1 << "): ";
+    cout << "Ingresa la posicion a borrar (1 a " << arreglo.size()  << "): ";
     cin >> posicion;
+    posicion--;
 
     if (posicion >= 0 && posicion < arreglo.size())
     {

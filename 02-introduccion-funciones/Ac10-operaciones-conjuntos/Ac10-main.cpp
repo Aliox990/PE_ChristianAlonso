@@ -82,14 +82,14 @@ int main() {
                 cout << "Elige el conjunto para calcular el complemento:" << endl;
                 cout << "1. Complemento de A" << endl;
                 cout << "2. Complemento de B" << endl;
-                cout << "Selecciona una opción: ";
+                cout << "Selecciona una opcion: ";
                 int opcionComp = obtenerNumero();
                 if (opcionComp == 1) {
                     complementoConjunto(conjuntoA, universo, "A");
                 } else if (opcionComp == 2) {
                     complementoConjunto(conjuntoB, universo, "B");
                 } else {
-                    cout << "Opción no válida." << endl;
+                    cout << "Opcion no valida." << endl;
                 }
                 break;
             }
@@ -98,7 +98,7 @@ int main() {
                 ejecucion = false;
                 break;
             default:
-                cout << "Opción no válida. Inténtalo de nuevo." << endl;
+                cout << "Opcion no válida. Intentalo de nuevo." << endl;
                 break;
         }
 
